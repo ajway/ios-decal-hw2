@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="CalKeyboard" customModuleProvider="target">
             <connections>
+                <outlet property="bearKeyboardButton" destination="4mK-cy-tjR" id="FfO-ca-h0F"/>
+                <outlet property="catKeyboardButton" destination="sXd-ft-HDb" id="kYG-rL-K3w"/>
+                <outlet property="deleteKeyboardButton" destination="GeK-Nt-g00" id="oWX-sa-sZY"/>
+                <outlet property="fishKeyboardButton" destination="X85-Pm-55I" id="BeO-A2-Lm9"/>
                 <outlet property="nextKeyboardButton" destination="gRt-12-JcF" id="CWQ-gG-G2m"/>
+                <outlet property="pigKeyboardButton" destination="6bA-Ke-Wdj" id="ad7-fY-5An"/>
+                <outlet property="returnKeyboardButton" destination="bTK-TX-XZA" id="cMF-O6-YcO"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -22,10 +28,40 @@
                     </constraints>
                     <state key="normal" title="N"/>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTK-TX-XZA">
+                    <rect key="frame" x="321" y="162" width="46" height="30"/>
+                    <state key="normal" title="Return"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GeK-Nt-g00">
+                    <rect key="frame" x="322" y="124" width="45" height="30"/>
+                    <state key="normal" title="Delete">
+                        <color key="titleColor" red="0.86332215314136129" green="0.0" blue="0.0088643027763875976" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mK-cy-tjR">
+                    <rect key="frame" x="103" y="18" width="65" height="65"/>
+                    <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Bear"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X85-Pm-55I">
+                    <rect key="frame" x="103" y="106" width="65" height="65"/>
+                    <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Fish"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bA-Ke-Wdj">
+                    <rect key="frame" x="195" y="106" width="65" height="65"/>
+                    <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Pig"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXd-ft-HDb">
+                    <rect key="frame" x="195" y="18" width="65" height="65"/>
+                    <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Cat"/>
+                </button>
             </subviews>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="gRt-12-JcF" secondAttribute="bottom" constant="8" id="0bP-LM-PDC"/>
                 <constraint firstItem="gRt-12-JcF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="LUD-YX-JVD"/>
-                <constraint firstAttribute="bottom" secondItem="gRt-12-JcF" secondAttribute="bottom" constant="8" id="tEE-h3-FZa"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
